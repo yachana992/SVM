@@ -135,7 +135,7 @@ class SVM:
 #Loading the dataset
 raw_data = dataset("data/nepali_universal_v4.pos")
 
-raw_data = raw_data[1:10000]
+raw_data = raw_data[1:5000]
 
 train_sentences = []  # Initialize an empty list of sentences
 train_features = []
