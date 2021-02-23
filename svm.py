@@ -133,7 +133,7 @@ class SVM:
         return approx
 
 #Loading the dataset
-raw_data = dataset("nepali_universal_v4.pos")
+raw_data = dataset("data/nepali_universal_v4.pos")
 
 raw_data = raw_data[1:]
 
