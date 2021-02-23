@@ -147,14 +147,9 @@ for data in raw_data:
   for x in range(len(train_tokens)):
     train_features.append(get_features(train_tokens,x))
 
-#Printing the feature dictionary and the labels
-print(train_features)
-print(label)
-
 #Converting the feature arrays into feature vectors)
 vec = DictVectorizer(sparse=False)
 X_arr = vec.fit_transform(train_features)
-print(X_arr.shape)
 
 y = np.array(label)
 
@@ -180,10 +175,6 @@ def pred_tag(word):
 
 #Predict tags for each word
 pred_tags = [pred_tag(test_word) for test_word in X_test]
-print()
-print(pred_tags)
-
-print(len(pred_tags))
 
 #Funtion to calculate the accuracy
 def accuracy(y_true, y_pred):
